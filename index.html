@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề thi Thường xuyên 2 - Learning Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-logo-group">
+            <div class="logo">LearnHub</div>
+            <div class="site-name">Hệ thống học tập cá nhân</div>
+        </div>
+        <div class="user-profile">
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar-img">
+            <div class="user-text">
+                <span class="student-name">Nguyễn Huy Hoàng</span>
+                <span class="student-id">MSSV: 25DHCTT054</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+
+        <aside class="sidebar">
+            <nav class="navigation-menu">
+                <a href="#" class="menu-item active">Dashboard</a>
+                <a href="#" class="menu-item">Môn học</a>
+                <a href="#" class="menu-item">Bài tập</a>
+                <a href="#" class="menu-item">Kết quả học tập</a>
+                <a href="#" class="menu-item">Tài khoản</a>
+            </nav>
+            <div class="sidebar-decor">
+                <img src="images/decor.jpg" alt="Decor"
+                    style="width: 100%; border-radius: 6px; margin-top: 20px; opacity: 0.5;">
+            </div>
+        </aside>
+
+        <main class="main-content-area">
+
+            <div class="welcome-banner">
+                <h2>Xin chào, Nguyễn Huy Hoàng 👋</h2>
+                <p>Thầy cô vừa cập nhật các môn học và tiến độ làm bài của bạn.</p>
+            </div>
+
+            <div class="workspace-columns">
+
+                <div class="column-left">
+                    <section class="courses-section">
+                        <h3 class="section-title">Danh sách môn học</h3>
+
+                        <div class="courses-grid" id="courseGridSystem">
+
+                            <div class="course-card" data-title="HTML/CSS" data-progress="90%">
+                                <img src="images/img1.jpg" alt="Môn học">
+                                <div class="course-card-body">
+                                    <h4>HTML/CSS</h4>
+                                    <p class="progress-text">Tiến độ: 90%</p>
+                                    <button class="btn-action-view">Xem</button>
+                                </div>
+                            </div>
+
+                            <div class="course-card" data-title="JavaScript" data-progress="80%">
+                                <img src="images/img2.jpg" alt="Môn học">
+                                <div class="course-card-body">
+                                    <h4>JavaScript</h4>
+                                    <p class="progress-text">Tiến độ: 80%</p>
+                                    <button class="btn-action-view">Xem</button>
+                                </div>
+                            </div>
+
+                            <div class="course-card" data-title="PHP" data-progress="75%">
+                                <img src="images/img3.jpg" alt="Môn học">
+                                <div class="course-card-body">
+                                    <h4>PHP</h4>
+                                    <p class="progress-text">Tiến độ: 75%</p>
+                                    <button class="btn-action-view">Xem</button>
+                                </div>
+                            </div>
+
+                            <div class="course-card" data-name="MySQL" data-progress="85%">
+                                <img src="images/img4.jpg" alt="Môn học">
+                                <div class="course-card-body">
+                                    <h4>MySQL</h4>
+                                    <p class="progress-text">Tiến độ: 85%</p>
+                                    <button class="btn-action-view">Xem</button>
+                                </div>
+                            </div>
+
+                            <div class="course-card" data-name="Laravel" data-progress="60%">
+                                <img src="images/img5.jpg" alt="Môn học">
+                                <div class="course-card-body">
+                                    <h4>Laravel</h4>
+                                    <p class="progress-text">Tiến độ: 60%</p>
+                                    <button class="btn-action-view">Xem</button>
+                                </div>
+                            </div>
+
+                            <div class="course-card" data-name="AI Cơ bản" data-progress="70%">
+                                <img src="images/img6.jpg" alt="Môn học">
+                                <div class="course-card-body">
+                                    <h4>AI Cơ bản</h4>
+                                    <p class="progress-text">Tiến độ: 70%</p>
+                                    <button class="btn-action-view">Xem</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <div class="column-right">
+                    <section class="interaction-display-box">
+                        <h3 class="panel-title">MÔN HỌC ĐANG CHỌN</h3>
+                        <div id="displayAreaDetail" class="detail-container">
+                            <p class="placeholder-text">Nhấp vào nút "Xem" của một môn học bất kỳ để hiển thị thông tin
+                                tiến độ tại đây.</p>
+                        </div>
+                    </section>
+
+                    <section class="announcement-panel">
+<h3 class="panel-title">Thông báo từ hệ thống</h3>
+                        <ul class="announcement-list">
+                            <li>Lịch làm bài kiểm tra thực hành đợt 2 áp dụng tuần này.</li>
+                            <li>Sinh viên lưu ý nộp thư mục bài làm đúng định dạng cấu trúc đề bài.</li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+
+            <section class="summary-statistics-container">
+                <div class="summary-box">
+                    <h5>Số môn học</h5>
+                    <p class="metric-number">6</p>
+                    <span class="unit-text">Môn đã đăng ký</span>
+                </div>
+                <div class="summary-box">
+                    <h5>Số bài tập</h5>
+                    <p class="metric-number">24</p>
+                    <span class="unit-text">Bài tập giao về nhà</span>
+                </div>
+                <div class="summary-box">
+                    <h5>Điểm trung bình</h5>
+                    <p class="metric-number">8.2</p>
+                    <span class="unit-text">Hệ điểm 10</span>
+                </div>
+                <div class="summary-box">
+                    <h5>Tín chỉ tích lũy</h5>
+                    <p class="metric-number">18</p>
+                    <span class="unit-text">Tín chỉ ngành IT</span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>MSSV: 22123456 | Họ tên sinh viên: Nguyễn Văn An | Ngày thi thực hành: 08/06/2026 - 9:00 AM</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
